@@ -1,0 +1,132 @@
+/* layout.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #282c34;
+}
+header .webName {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 0 1em;
+}
+nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 1em;
+}
+.post-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    width: 80%;
+    margin: auto;
+}
+.post-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.post-card img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #282c34;
+    text-align: center;
+    padding: 1em 0;
+}
+.author-info{
+     position: relative;
+}
+.author-info h3{
+    padding: 15px;
+    text-decoration: underline;
+}
+.author-info p{
+font-style: italic;
+padding-left: 15px;
+padding-bottom: 20px;
+}
+.author-info img{
+position: relative;
+top: 10%;
+left: 3%;
+z-index: 1;
+}
+.info{
+    background-color: #282c3447;
+    border-radius: 20px;
+    position: relative;
+    z-index: 0;
+    padding-top: 70px;
+
+}
+.content{
+    margin-left: 10px;
+    margin-top: 9em;
+    line-height: 30px;
+    background: linear-gradient(rgba(28, 21, 21, 0.5), rgba(125, 28, 117, 0.5)), url('../images/pasta.jpg');
+    background-size: cover; 
+    background-position: center;
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+    
+}
+.content h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    margin-left: 10px;
+}
+.content p{
+    margin-left: 10px;
+}
+
+@media (min-width: 600px) {
+    .post-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .post{
+        display: flex;
+    }
+    .author-info{
+        flex: 1;
+
+    }
+    .content{
+        flex: 1;
+    }
+}
+
+@media (min-width: 900px) {
+    .post-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

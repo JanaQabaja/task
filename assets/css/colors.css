@@ -1,0 +1,50 @@
+/* colors.css */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+header, footer {
+    background-color: #282c34;
+    color: #fff;
+}
+nav a {
+    color: #61dafb;
+}
+button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #005bb5;
+}
+.home a {
+    display: inline-block; /* or block */
+    background-color: #820aa0;
+    width: 90px ;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    padding: 4px;
+    margin-top: 15em;
+  text-align: center;
+}
+.author-info img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+}
+.social-sharing a{
+color: #34103a;
+font-size: 20px;
+}
+.home{
+    background: linear-gradient(rgba(246, 246, 246, 0.866), rgba(139, 44, 129, 0.641)), url('../images/pasta.jpg');
+    background-size: cover; 
+    background-position: center;
+    height: 100vh;
+}
