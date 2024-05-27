@@ -43,8 +43,11 @@ color: #34103a;
 font-size: 20px;
 }
 .home{
-    background: linear-gradient(rgba(246, 246, 246, 0.866), rgba(139, 44, 129, 0.641)), url('../images/pasta.jpg');
+    background: linear-gradient(rgba(27, 4, 4, 0.866), rgba(139, 44, 129, 0.641)), url('../images/pasta.jpg');
     background-size: cover; 
     background-position: center;
     height: 100vh;
+}
+.welcome i{
+    color: #8971d1; 
 }

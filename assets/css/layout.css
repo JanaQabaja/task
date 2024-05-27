@@ -74,9 +74,9 @@ font-style: italic;
 padding-left: 15px;
 padding-bottom: 20px;
 }
-.author-info img{
+.author-info figure {
 position: relative;
-top: 10%;
+top: 19%;
 left: 3%;
 z-index: 1;
 }
@@ -109,6 +109,46 @@ z-index: 1;
     margin-left: 10px;
 }
 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome {
+    padding: 20px;
+    background-color: #e6e1e1af;
+    border-radius: 10px;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 20em;
+}
+
+.image figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome, .image {
+        margin-bottom: 20px;
+   
+    }
+    .image img{
+        height: 14em;
+    }
+}
 @media (min-width: 600px) {
     .post-container {
         grid-template-columns: 1fr 1fr;
